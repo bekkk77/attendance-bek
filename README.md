@@ -1,37 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Оюутны Ирцийн Систем (QR Attendance)
 
-## Getting Started
+Энэхүү систем нь багш нэг QR код үзүүлж, оюутнууд өөрсдийн утсаар уншуулж ирцээ бүртгүүлэх зориулалттай.
 
-First, run the development server:
+## 👨‍🏫 Багшийн заавар (Teacher Guide)
+
+1.  **Оюутан нэмэх:** "Оюутнууд" цэс рүү орж хичээлд суух оюутнуудын мэдээллийг нэг удаа бүртгэнэ.
+2.  **QR үзүүлэх:** Хичээл эхлэхэд "QR Код" цэс рүү орно. Систем өнөөдрийн хичээлийн кодыг автоматаар үүсгэнэ.
+    *   Энэ кодыг проектор дээр харуулах эсвэл хэвлэж бэлтгэнэ.
+3.  **Ирц хянах:** "Ирцийн түүх" цэс рүү орж хэн хэзээ ирцээ бүртгүүлснийг цаг хугацаатай нь харна.
+4.  **Тайлан авах:** "CSV Татах" товчийг дарж ирцийн мэдээллийг Excel файл болгон авна.
+
+## 🎓 Оюутны заавар (Student Guide)
+
+1.  **Сканнердах:** Өөрийн утсаар системийн "Сканнер" цэс рүү орно.
+2.  **Профайл тохируулах:** Анх удаа ашиглаж байгаа бол Нэр болон Оюутны кодоо оруулж хадгална. (Энэ нь таны утсанд хадгалагдах тул дараа дахин оруулах шаардлагагүй).
+3.  **Бүртгүүлэх:** "Сканнердах" товчийг дарж багшийн үзүүлсэн QR кодыг уншуулна.
+4.  **Баталгаажуулах:** "Ирц амжилттай бүртгэгдлээ!" гэсэн ногоон мэдэгдэл гарч ирнэ.
+
+## 🛠 Технологийн давуу тал
+
+*   **Offline Support:** Дата баазтай холбогдох боломжгүй үед мэдээллийг LocalStorage-д хадгална.
+*   **Duplicate Prevention:** Нэг оюутан нэг өдөр хоёр удаа бүртгүүлэх боломжгүй.
+*   **Cross-Browser:** iPhone (Safari), Android (Chrome) бүх төрлийн хөтөч дээр ажиллана.
+
+## 🚀 Ажиллуулах (Development)
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# attendance-bek
