@@ -13,7 +13,7 @@ export async function POST(request) {
   const newMaterial = {
     ...material,
     id: Date.now().toString(),
-    dateAdded: new Date().toISOString(),
+    dateAdded: new Date().toISOString()
   };
   
   materials.push(newMaterial);

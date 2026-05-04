@@ -1,6 +1,6 @@
 import "./globals.css";
 import Link from 'next/link';
-import { Users, QrCode, BookOpen, LayoutDashboard } from 'lucide-react';
+import { Users, QrCode, BookOpen, LayoutDashboard, Clock } from 'lucide-react';
 
 export const metadata = {
   title: "Оюутны удирдлага",
@@ -17,17 +17,25 @@ export default function RootLayout({ children }) {
             Student System
           </div>
           <nav className="flex-1 p-4 space-y-2">
-            <Link href="/" className="flex items-center space-x-3 p-2 rounded hover:bg-indigo-600">
+            <Link href="/dashboard" className="flex items-center space-x-3 p-2 rounded hover:bg-indigo-600">
               <LayoutDashboard size={20} />
               <span>Хянах самбар</span>
             </Link>
-            <Link href="/students" className="flex items-center space-x-3 p-2 rounded hover:bg-indigo-600">
+            <Link href="/users" className="flex items-center space-x-3 p-2 rounded hover:bg-indigo-600">
               <Users size={20} />
               <span>Оюутнууд</span>
             </Link>
-            <Link href="/attendance" className="flex items-center space-x-3 p-2 rounded hover:bg-indigo-600">
+            <Link href="/qr-generator" className="flex items-center space-x-3 p-2 rounded hover:bg-indigo-600">
               <QrCode size={20} />
-              <span>Ирц (QR)</span>
+              <span>QR Код</span>
+            </Link>
+            <Link href="/scanner" className="flex items-center space-x-3 p-2 rounded hover:bg-indigo-600">
+              <QrCode size={20} />
+              <span>Сканнер</span>
+            </Link>
+            <Link href="/attendance" className="flex items-center space-x-3 p-2 rounded hover:bg-indigo-600">
+              <Clock size={20} />
+              <span>Ирцийн түүх</span>
             </Link>
             <Link href="/materials" className="flex items-center space-x-3 p-2 rounded hover:bg-indigo-600">
               <BookOpen size={20} />

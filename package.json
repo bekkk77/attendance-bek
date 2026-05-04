@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "html5-qrcode": "^2.3.8",
     "lucide-react": "^1.14.0",
     "next": "16.2.4",
     "qrcode": "^1.5.4",
