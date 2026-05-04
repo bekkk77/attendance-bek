@@ -9,8 +9,10 @@ export default function AttendancePage() {
   const [records, setRecords] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [filterDate, setFilterDate] = useState('');
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     loadRecords();
   }, []);
 
@@ -152,11 +154,6 @@ export default function AttendancePage() {
             </tbody>
           </table>
         </div>
-      </div>
-    </div>
-  );
-}
-   </div>
       </div>
     </div>
   );

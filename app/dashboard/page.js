@@ -13,8 +13,10 @@ export default function DashboardPage() {
     materials: 0
   });
   const [recentAttendance, setRecentAttendance] = useState([]);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const fetchData = async () => {
       const students = await storage.getStudents();
       const attendance = await storage.getAttendance();
@@ -122,11 +124,6 @@ export default function DashboardPage() {
             )}
           </div>
         </div>
-      </div>
-    </div>
-  );
-}
-   </div>
       </div>
     </div>
   );
